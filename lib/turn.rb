@@ -33,3 +33,4 @@ def turn(board)
     puts "That is an invalid entry!"
     turn(board)
   end
+end
