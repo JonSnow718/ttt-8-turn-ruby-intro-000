@@ -27,5 +27,10 @@ def turn(board)
   index = gets.chomp
   index = input_to_index(index)
   if valid_move?(index, board)
+    move(move(board, index))
+    puts display_board(board)
+  else 
+    puts "That is an invalid entry!"
+    turn(board)
     end
 end
